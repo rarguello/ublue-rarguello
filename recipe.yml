@@ -71,6 +71,8 @@ rpm:
     - python3-libguestfs
     - python3-lxml
     - python3-netaddr
+    - libvirt-daemon-config-network
+    - libvirt-daemon-kvm
     - qemu-kvm
     - tmux
     - vim-enhanced
