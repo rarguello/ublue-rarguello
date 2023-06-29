@@ -2,10 +2,6 @@
 
 set -euo pipefail
 
-echo "Disable Fedora third-party repos"
-/usr/lib/fedora-third-party/fedora-third-party-opt-out
-/usr/bin/fedora-third-party disable
-
 echo "Add Flathub"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
