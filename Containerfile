@@ -24,6 +24,7 @@ ARG RECIPE=./recipe.yml
 # See issue #28 (https://github.com/ublue-os/startingpoint/issues/28).
 COPY usr /usr
 
+# Copy repo files.
 COPY etc /etc
 
 # Copy the recipe that we're building.
