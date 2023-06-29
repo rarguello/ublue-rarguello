@@ -62,15 +62,6 @@ rpm:
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-dash-to-dock
-    - guestfs-tools
-    - ibm-plex-mono-fonts
-    - libguestfs-tools-c
-    - libvirt-daemon-config-network
-    - libvirt-daemon-kvm
-    - python3-ansible-lint
-    - python3-libguestfs
-    - python3-lxml
-    - python3-netaddr
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
     - qemu-kvm
@@ -78,12 +69,7 @@ rpm:
     - vim-enhanced
     - virt-install
     - virt-manager
-    - virt-top
     - virt-viewer
-    - zerotier-one
-    - virt-viewer
-    - tmux
-    - vim-enhanced
     - zsh
 
   # These RPMs will be removed from the system image. This step happens during
