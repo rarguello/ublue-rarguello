@@ -50,6 +50,4 @@ RUN rpm-ostree install /tmp/ublue-os-wallpapers-0.1-1.fc38.noarch.rpm && \
         chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
         rm -rf /tmp/* /var/* && \
-        rm -rf /etc/yum.repos.d/vscode.repo && \
-        rm -rf /etc/yum.repos.d/1password.repo && \
         ostree container commit
