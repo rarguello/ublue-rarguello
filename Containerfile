@@ -29,6 +29,7 @@ COPY usr /usr
 
 # Copy public key
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
+# Copy repo files.
 COPY etc /etc
 
 # Copy repo files.
