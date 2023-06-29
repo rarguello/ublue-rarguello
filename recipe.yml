@@ -54,13 +54,18 @@ rpm:
   # performed via rpm-ostree during the image build, and will be pre-installed
   # at the "system level" in the final image.
   install:
-    - 1password
     - code
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-dash-to-dock
+    - libvirt-daemon-config-network
+    - libvirt-daemon-kvm
+    - qemu-kvm
     - tmux
     - vim-enhanced
+    - virt-install
+    - virt-manager
+    - virt-viewer
     - zsh
 
   # These RPMs will be removed from the system image. This step happens during
