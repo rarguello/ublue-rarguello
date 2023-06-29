@@ -55,7 +55,6 @@ rpm:
   # at the "system level" in the final image.
   install:
     - 1password
-    - 1password-cli
     - code
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-blur-my-shell
