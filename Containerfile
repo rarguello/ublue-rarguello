@@ -1,4 +1,4 @@
-# This is the Containerfile for your custom image. 
+# This is the Containerfile for your custom image.
 
 # It takes in the recipe, version, and base image as arguments,
 # all of which are provided by build.yml when doing builds
@@ -29,6 +29,7 @@ COPY usr /usr
 
 # Copy public key
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
+COPY etc /etc
 
 # Copy the recipe that we're building.
 COPY ${RECIPE} /usr/share/ublue-os/recipe.yml
@@ -54,4 +55,6 @@ RUN rpm-ostree install /tmp/ublue-os-wallpapers-0.1-1.fc38.noarch.rpm && \
         chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
         rm -rf /tmp/* /var/* && \
+        rm -rf /etc/yum.repos.d/vscode.repo && \
+        rm -rf /etc/yum.repos.d/1password.repo && \
         ostree container commit
