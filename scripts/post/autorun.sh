@@ -2,20 +2,25 @@
 
 set -euo pipefail
 
+echo "Disable Fedora third-party repos"
+/usr/lib/fedora-third-party/fedora-third-party-opt-out
+/usr/bin/fedora-third-party disable
+
 echo "Add Flathub"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 echo "Install Flatpaks"
-flatpak install --system --noninteractive flathub com.google.Chrome
-flatpak install --system --noninteractive flathub com.raggesilver.BlackBox
-flatpak install --system --noninteractive flathub com.slack.Slack
-flatpak install --system --noninteractive flathub com.spotify.Client
-flatpak install --system --noninteractive flathub org.gnome.meld
-flatpak install --system --noninteractive flathub org.libreoffice.LibreOffice
-flatpak install --system --noninteractive flathub org.mozilla.firefox
-flatpak install --system --noninteractive flathub org.mozilla.Thunderbird
-flatpak install --system --noninteractive flathub org.telegram.desktop
-flatpak install --system --noninteractive flathub us.zoom.Zoom
+flatpak install flathub \
+                com.google.Chrome \
+                com.raggesilver.BlackBox \
+                com.slack.Slack \
+                com.spotify.Client \
+                org.gnome.meld \
+                org.libreoffice.LibreOffice \
+                org.mozilla.firefox \
+                org.mozilla.Thunderbird \
+                org.telegram.desktop \
+                us.zoom.Zoom
 
 echo "Debug installed Flatpaks"
 flatpak list
