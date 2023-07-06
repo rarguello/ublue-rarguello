@@ -66,6 +66,7 @@ rpm:
     - virt-install
     - virt-manager
     - virt-viewer
+    - zerotier-one
     - zsh
 
   # These RPMs will be removed from the system image. This step happens during
