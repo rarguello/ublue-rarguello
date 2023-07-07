@@ -62,13 +62,16 @@ rpm:
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-dash-to-dock
+    - guestfs-tools
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
+    - python3-libguestfs
     - qemu-kvm
     - tmux
     - vim-enhanced
     - virt-install
     - virt-manager
+    - virt-top
     - virt-viewer
     - zerotier-one
     - zsh
