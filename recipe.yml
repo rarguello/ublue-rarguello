@@ -58,7 +58,6 @@ rpm:
     - 1password
     - code
     - fira-code-fonts
-    - genisoimage
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-dash-to-dock
