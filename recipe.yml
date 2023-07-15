@@ -59,6 +59,7 @@ rpm:
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-dash-to-dock
     - guestfs-tools
+    - ibm-plex-mono-fonts
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
     - python3-libguestfs
