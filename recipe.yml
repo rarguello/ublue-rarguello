@@ -55,6 +55,7 @@ rpm:
   # at the "system level" in the final image.
   install:
     - code
+    - fira-code-fonts
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-dash-to-dock
