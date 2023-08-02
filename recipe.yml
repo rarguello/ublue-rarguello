@@ -54,6 +54,7 @@ rpm:
   # performed via rpm-ostree during the image build, and will be pre-installed
   # at the "system level" in the final image.
   install:
+    - ansible-core
     - code
     - fira-code-fonts
     - gnome-shell-extension-appindicator
@@ -63,6 +64,7 @@ rpm:
     - ibm-plex-mono-fonts
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
+    - python3-ansible-lint
     - python3-libguestfs
     - qemu-kvm
     - tmux
