@@ -57,15 +57,19 @@ rpm:
     - ansible-core
     - code
     - fira-code-fonts
+    - genisoimage
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-dash-to-dock
     - guestfs-tools
     - ibm-plex-mono-fonts
+    - libguestfs-tools-c
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
     - python3-ansible-lint
     - python3-libguestfs
+    - python3-lxml
+    - python3-netaddr
     - qemu-kvm
     - tmux
     - vim-enhanced
