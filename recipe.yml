@@ -55,7 +55,6 @@ rpm:
   # at the "system level" in the final image.
   install:
     - ansible-core
-    - 1password
     - code
     - fira-code-fonts
     - gnome-shell-extension-appindicator
@@ -65,6 +64,7 @@ rpm:
     - ibm-plex-mono-fonts
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
+    - python3-ansible-lint
     - python3-libguestfs
     - qemu-kvm
     - tmux
