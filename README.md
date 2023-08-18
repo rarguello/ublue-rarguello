@@ -156,11 +156,3 @@ After doing that, you'll be able to run the following commands:
 - `just update` - Update rpm-ostree, flatpaks, and distroboxes in one command
 
 Check the [just website](https://just.systems) for tips on modifying and adding your own recipes.
-
-## Verification
-
-These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
-
-    cosign verify --key cosign.pub ghcr.io/rarguello/ublue-rarguello
-
-If you're forking this repo, the uBlue website has [instructions](https://ublue.it/making-your-own/) for setting up signing properly.
