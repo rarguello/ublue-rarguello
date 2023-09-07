@@ -33,9 +33,6 @@ COPY cosign.pub /usr/share/ublue-os/cosign.pub
 # Copy repo files.
 COPY etc /etc
 
-# Copy repo files.
-COPY etc /etc
-
 # Copy the recipe that we're building.
 COPY ${RECIPE} /usr/share/ublue-os/recipe.yml
 
