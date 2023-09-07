@@ -54,7 +54,6 @@ rpm:
   # performed via rpm-ostree during the image build, and will be pre-installed
   # at the "system level" in the final image.
   install:
-    - 1password
     - ansible-core
     - code
     - fira-code-fonts
